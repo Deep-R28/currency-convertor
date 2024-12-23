@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="currcss.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <div class="cont">
+        
+        <h1 class="curr">Currency Converter</h1>
+    <form>
+        <div class="amount">
+            <p class="ent">Enter the Amount</p>
+            <input type="text" value="100" placeholder="Enter the Value (Not in decimals )">
+        </div>
+        <div class="dropdown">
+            <div class="from">
+            
+            <div class="select-cont">
+                <p>From</p>
+                <img src="https://flagsapi.com/US/shiny/64.png">
+                <select name="from" id="from">
+                </select>
+            </div>
+        </div>
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div class="to">
+            
+            <div class="select-cont">
+                <p>To</p>
+                <img src="https://flagsapi.com/IN/shiny/64.png">
+                <select name="to" id="to">
+                </select>
+            </div>
+        </div>
+    </div>
+        <button type="button">Evaluate The Rate <i class="fa-solid fa-square-poll-vertical" id="exchange"></i></button>
+        <div class="message"></div>
+    </form>
+</div>
+<script src="codes.js"></script>
+<script src="currjs.js"></script>
+</body>
+</html>
